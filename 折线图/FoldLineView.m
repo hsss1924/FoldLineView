@@ -50,13 +50,11 @@
     //找最大里程数
     //这个地方的逻辑是: 找到这组数据中的最大值,然后根据最大值,选择一个合适的数值当做最大值,然后根据数组里的值等比例安排各个点的位置
     CGFloat maxKM = 0;
-    for (int i = 0; i< self.numbers.count - 1 ; i++ ) {
-        if ([self.kmArr[i] doubleValue] > [self.kmArr[i+1] doubleValue]) {
+     for (int i = 0 ; i < self.numbers.count - 1; i++ ) {
+        if (maxKM < [self.kmArr[i]doubleValue]) {
             maxKM = [self.kmArr[i] doubleValue];
-        }else{
-            maxKM = [self.kmArr[i + 1] doubleValue];
         }
-    };
+    }
     //NSLog(@"%f",[self.kmArr[0] doubleValue] /maxKM);
     //最大里程设置为高度90% 求出最大值
     maxKM = maxKM / 0.9;
