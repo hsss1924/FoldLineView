@@ -49,7 +49,7 @@
     }
     //找最大里程数
     //这个地方的逻辑是: 找到这组数据中的最大值,然后根据最大值,选择一个合适的数值当做最大值,然后根据数组里的值等比例安排各个点的位置
-    CGFloat maxKM = 0;
+    double maxKM = [self.kmArr[0] doubleValue];
      for (int i = 0 ; i < self.numbers.count - 1; i++ ) {
         if (maxKM < [self.kmArr[i]doubleValue]) {
             maxKM = [self.kmArr[i] doubleValue];
