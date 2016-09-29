@@ -36,7 +36,7 @@
 -(void)setUI{
     
     //每个日期之间的间距 -- 54
-    CGFloat space = (self.bounds.size.width - 60) / (7- 1) ;
+    CGFloat space = ([UIScreen mainScreen].bounds.size.width - 60 - 30 ) / (7- 1) ;
 //    NSLog(@"%f",space);
     //循环添加日期标签
     for (int i = 0; i< self.numbers.count; i++ ) {
