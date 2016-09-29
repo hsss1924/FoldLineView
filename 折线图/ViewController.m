@@ -50,7 +50,7 @@
     //一个页面显示 7天
     #pragma mark --space是竖线之间的间距
      CGFloat space = (self.view.bounds.size.width - 60 - 15) / 6 ;
-    self.foldLineView1 = [[FoldLineView alloc]initWithFrame:CGRectMake(0, 0,  [UIScreen mainScreen].bounds.size.width - 30, 200)];;
+    self.foldLineView1 = [[FoldLineView alloc]initWithFrame:CGRectMake(0, 0,(numbers1.count - 1 ) * space + 60 , 200)];;
     NSLog(@"scrollView宽度-->%f", (numbers.count - 1 ) * space);
     self.foldLineView1.numbers = numbers1;
     self.foldLineView1.kmArr = kmArr1;
